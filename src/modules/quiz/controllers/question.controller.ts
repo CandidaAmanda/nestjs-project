@@ -3,7 +3,9 @@ import { QuestionDto } from "../dto/question.dto";
 import { Question } from "../models/question.entity";
 import { QuestionService } from "../services/question.service";
 import { QuizService } from "../services/quiz.service";
+import {ApiTags} from '@nestjs/swagger'
 
+@ApiTags('question')
 @Controller('question')
 
 export class QuestionController {
